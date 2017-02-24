@@ -10,23 +10,6 @@ $(function () {
 			intervalTime = 5000,
 			sliderInterval;
 
-		// preload the img before starting the Slider
-		(function preloader() {
-			if (currIndex < totalSlides) {
-				// load img
-				imgCache[currIndex] = new Image();
-				imgCache[currIndex].src = slides.eq(currIndex).find("img").attr("src");
-				imgCache[currIndex].onload = function () {
-					currIndex += 1;
-					preloader();
-				}
-			} else {
-				currIndex = 0;
-				cycleItems();
-				startSlider();
-			}
-		}()); // end preloader
-
 		// fades in and out slides
 		function cycleItems() {
 			var currSlide = slides.eq(currIndex);
@@ -54,6 +37,23 @@ $(function () {
 				changeSlide();
 			}, intervalTime);
 		} // end startSlider
+
+		// preload the img before starting the Slider
+		(function preloader() {
+			if (currIndex < totalSlides) {
+				// load img
+				imgCache[currIndex] = new Image();
+				imgCache[currIndex].src = slides.eq(currIndex).find("img").attr("src");
+				imgCache[currIndex].onload = function () {
+					currIndex += 1;
+					preloader();
+				}
+			} else {
+				currIndex = 0;
+				cycleItems();
+				startSlider();
+			}
+		}()); // end preloader
 
 		// click on next
 		$(".next-slide").on("click", function () {
