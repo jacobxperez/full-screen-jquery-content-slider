@@ -47,7 +47,7 @@ $(function () {
 				imgCache[currIndex].onload = function () {
 					currIndex += 1;
 					preloader();
-				}
+				};
 			} else {
 				currIndex = 0;
 				cycleItems();
