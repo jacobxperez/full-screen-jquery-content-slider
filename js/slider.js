@@ -1,7 +1,7 @@
-$(function () {
+$(function() {
 
 	// Slider
-	$(".slider").each(function () {
+	$(".slider").each(function() {
 		var slider = $(this),
 			slides = slider.find(".slide"),
 			totalSlides = slides.length,
@@ -33,7 +33,7 @@ $(function () {
 		function startSlider() {
 			clearInterval(sliderInterval);
 
-			sliderInterval = setInterval(function () {
+			sliderInterval = setInterval(function() {
 				changeSlide();
 			}, intervalTime);
 		} // end startSlider
@@ -44,7 +44,7 @@ $(function () {
 				// load img
 				imgCache[currIndex] = new Image();
 				imgCache[currIndex].src = slides.eq(currIndex).find("img").attr("src");
-				imgCache[currIndex].onload = function () {
+				imgCache[currIndex].onload = function() {
 					currIndex += 1;
 					preloader();
 				};
@@ -56,7 +56,7 @@ $(function () {
 		}()); // end preloader
 
 		// click on next
-		$(".next-slide").on("click", function () {
+		$(".next-slide").on("click", function() {
 			currIndex += 1;
 
 			if (currIndex > totalSlides - 1) {
@@ -68,7 +68,7 @@ $(function () {
 		}); // end click of next
 
 		// click on prev
-		$(".prev-slide").on("click", function () {
+		$(".prev-slide").on("click", function() {
 			currIndex -= 1;
 
 			if (currIndex < 0) {
