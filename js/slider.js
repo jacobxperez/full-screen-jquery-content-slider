@@ -14,8 +14,8 @@ $(function() {
 		function cycleItems() {
 			var currSlide = slides.eq(currIndex);
 
-			slides.fadeOut(500);
-			currSlide.fadeIn(500);
+			slides.fadeOut(500).css("z-index", 1);
+			currSlide.fadeIn(500).css("z-index", 5);
 		} // end cycleItem
 
 		// Changes slides
