@@ -1,7 +1,5 @@
 # [Full Screen jQuery Content Slider](https://jacobxperez.github.io/full-screen-jquery-content-slider/)
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/4f018bd2916e4769b2d6f73b708bde99)](https://www.codacy.com/app/jacobxperez/full-screen-jquery-content-slider?utm_source=github.com&utm_medium=referral&utm_content=jacobxperez/full-screen-jquery-content-slider&utm_campaign=badger)
-
 ## Project Status
 
 Project under active development. No stable version has been release.
