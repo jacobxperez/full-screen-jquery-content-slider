@@ -1,0 +1,36 @@
+// Button
+// ----------------------------------------------------------------------------/
+
+.@{button-class},
+button,
+input[type=button] {
+	display: inline-block;
+	.padding(@button-padding-y; @button-padding-x);
+	.border(@button-border-width; solid; @button-border-color);
+	background-color: @button-background;
+	color: @button-color;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	.border-radius(@button-border-radius);
+	z-index: 1;
+
+	&:active,
+	&:focus,
+	&:hover {
+		.background-color(@button-background; @switch: dark);
+		text-decoration: none;
+	}
+}
+
+button,
+input[type=button],
+select {
+	overflow: visible;
+	text-transform: none;
+}
+
+button[disabled],
+html input[disabled] {
+	cursor: default;
+}
