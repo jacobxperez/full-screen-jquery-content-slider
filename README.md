@@ -4,6 +4,12 @@
 
 Project stable and under active development and improvement.
 
+## Getting Started
+
+Start by **[downloading](https://github.com/jacobxperez/full-screen-jquery-content-slider/archive/master.zip)** the [repository](https://github.com/jacobxperez/full-screen-jquery-content-slider) or by cloning the project:
+
+	$ git clone https://github.com/jacobxperez/full-screen-jquery-content-slider.git
+
 ## Contributing
 
 Help us make this [jQuery Slider](https://jacobxperez.github.io/full-screen-jquery-content-slider/) better for everyone, any contribution will be considered. Use the [issue tracker](https://github.com/jacobxperez/full-screen-jquery-content-slider/issues) for bug reports, features requests and submitting pull requests.
