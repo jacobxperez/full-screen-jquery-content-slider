@@ -2,7 +2,7 @@
 
 ## Project Status
 
-Project under active development. No stable version has been release.
+Project stable and under active development and improvement.
 
 ## Contributing
 
