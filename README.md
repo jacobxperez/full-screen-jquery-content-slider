@@ -6,7 +6,7 @@ Project under active development. No stable version has been release.
 
 ## Contributing
 
-Help us make this [slider](https://jacobxperez.github.io/full-screen-jquery-content-slider/) better for everyone, any contribution will be considered. Use the [issue tracker](https://github.com/jacobxperez/full-screen-jquery-content-slider/issues) for bug reports, features requests and submitting pull requests.
+Help us make this [jQuery Slider](https://jacobxperez.github.io/full-screen-jquery-content-slider/) better for everyone, any contribution will be considered. Use the [issue tracker](https://github.com/jacobxperez/full-screen-jquery-content-slider/issues) for bug reports, features requests and submitting pull requests.
 
 ### Bug Reports
 
