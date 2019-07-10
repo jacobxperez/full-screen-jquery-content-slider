@@ -258,219 +258,6 @@ sub {
 	bottom: -0.25em;
 }
 
-code,
-kbd,
-pre,
-samp {
-	font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", "Nimbus Mono L", "Liberation Mono", FreeMono, monospace;
-}
-
-code {
-	line-height: 1;
-	background-color: #e6e6e6;
-	color: #555;
-}
-
-pre {
-	margin-bottom: 1.5rem;
-	padding: .5em .875em;
-	white-space: pre;
-	background-color: #e6e6e6;
-	color: #555;
-	overflow: auto;
-}
-
-pre code {
-	background-color: inherit;
-	color: inherit;
-}
-
-blockquote,
-q {
-	quotes: none;
-}
-
-blockquote {
-	margin-bottom: 1.5rem;
-	font-size: 143.75%;
-	font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, "Nimbus Roman No9 L", "Liberation Serif", FreeSerif, serif;
-	font-style: italic;
-}
-
-blockquote:after,
-blockquote:before {
-	content: '';
-	content: none;
-}
-
-blockquote small:before {
-	content: "— ";
-}
-
-blockquote small {
-	display: block;
-	width: 100%;
-	font-size: 60.86956522%;
-}
-
-table {
-	display: table;
-	width: 100%;
-	margin-bottom: 1.5rem;
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-td,
-th {
-	display: table-cell;
-	padding: .5em .875em;
-	text-align: left;
-}
-
-input[type=date],
-input[type=datetime-local],
-input[type=datetime],
-input[type=email],
-input[type=month],
-input[type=number],
-input[type=password],
-input[type=search],
-input[type=tel],
-input[type=text],
-input[type=time],
-input[type=url],
-input[type=week],
-select,
-textarea {
-	display: block;
-	padding: .5rem .875rem;
-	border: .0625em solid rgba(0, 0, 0, 0.3);
-	width: 100%;
-	line-height: 24px;
-	-webkit-border-radius: .25em .25em .25em .25em;
-	-moz-border-radius: .25em .25em .25em .25em;
-	border-radius: .25em .25em .25em .25em;
-	box-shadow: none;
-}
-
-input[type=date]:focus,
-input[type=datetime-local]:focus,
-input[type=datetime]:focus,
-input[type=email]:focus,
-input[type=month]:focus,
-input[type=number]:focus,
-input[type=password]:focus,
-input[type=search]:focus,
-input[type=tel]:focus,
-input[type=text]:focus,
-input[type=time]:focus,
-input[type=url]:focus,
-input[type=week]:focus,
-select:focus,
-textarea:focus {
-	border-color: #06f;
-	color: #333;
-	box-shadow: none;
-}
-
-textarea {
-	min-height: 6.25em;
-	overflow: auto;
-	resize: vertical;
-}
-
-:not([type=submit]):invalid {
-	border-color: #f22;
-	box-shadow: none;
-}
-
-.button,
-button,
-input[type=button] {
-	display: inline-block;
-	padding: .5em .875em;
-	border: .0625em solid rgba(0, 0, 0, 0.3);
-	background-color: #e6e6e6;
-	color: #333;
-	text-align: center;
-	vertical-align: middle;
-	cursor: pointer;
-	-webkit-border-radius: .25em .25em .25em .25em;
-	-moz-border-radius: .25em .25em .25em .25em;
-	border-radius: .25em .25em .25em .25em;
-	z-index: 1;
-}
-
-.button:active,
-.button:focus,
-.button:hover,
-button:active,
-button:focus,
-button:hover,
-input[type=button]:active,
-input[type=button]:focus,
-input[type=button]:hover {
-	background-color: #d5d5d5;
-	text-decoration: none;
-}
-
-button,
-input[type=button],
-select {
-	overflow: visible;
-	text-transform: none;
-}
-
-button[disabled],
-html input[disabled] {
-	cursor: default;
-}
-
-.container:after,
-.container:before,
-.row:after,
-.row:before {
-	content: " ";
-	display: table;
-}
-
-.container:after,
-.row:after {
-	clear: both;
-}
-
-.container {
-	min-width: 20em;
-	max-width: 61.25em;
-	margin: 0 auto;
-	padding-left: 1.25em;
-	padding-right: 1.25em;
-}
-
-body > .container:first-child {
-	padding-top: 2.5em;
-}
-
-body > .container:last-child {
-	padding-bottom: 3.75em;
-}
-
-body > .container:only-child {
-	padding-top: 2.5em;
-	padding-bottom: 3.75em;
-}
-@media screen and (max-width: 61.1875em) {
-	.container {
-		max-width: 52.5em;
-	}
-}
-@media screen and (max-width: 42.5em) {
-	.container {
-		max-width: 42.5em;
-	}
-}
-
 .slider {
 	position: relative;
 	width: 100%;
@@ -596,49 +383,21 @@ body > .container:only-child {
 }
 @media screen and (max-width: 61.25em) {
 	.slider {
-		height: 57.95918367vw;
+		max-height: 57.95918367vw;
 	}
 }
-@media screen and (min-height: 100em) {
-	html {
-		font-size: 1vh;
+@media screen and (min-height: 61.25em) {
+	.slider {
+		max-height: 57.95918367vw;
 	}
 }
-@media screen and (min-width: 100em) {
+@media screen and (min-height: 120em) {
 	html {
-		font-size: 1vw;
+		font-size: .83333333vh;
 	}
 }
-@media print {
-	body,
+@media screen and (min-width: 120em) {
 	html {
-		height: auto;
-	}
-
-	html {
-		font-size: 100%;
-	}
-
-	body {
-		background: white;
-		color: black;
-	}
-
-	nav {
-		display: none;
-	}
-
-	.container {
-		max-width: 100%;
-		margin: 0;
-		padding: 0;
-	}
-
-	.columns {
-		width: 100%;
-	}
-
-	.hide-print {
-		display: none;
+		font-size: .83333333vw;
 	}
 }
