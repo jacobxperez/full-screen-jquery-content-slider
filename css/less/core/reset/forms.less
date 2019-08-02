@@ -3,7 +3,6 @@
 
 input[type=date],
 input[type=datetime-local],
-input[type=datetime],
 input[type=email],
 input[type=month],
 input[type=number],
@@ -52,6 +51,6 @@ textarea {
 }
 
 :not([type=submit]):invalid {
-	.border-color(#f22);
+	.border-color(@danger);
 	box-shadow: none;
 }
