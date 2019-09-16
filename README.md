@@ -2,7 +2,7 @@
 
 ## Project Status
 
-Project stable and under active development and improvement.
+Project stable and under active development.
 
 ## Getting Started
 
