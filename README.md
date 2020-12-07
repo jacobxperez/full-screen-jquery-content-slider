@@ -1,9 +1,5 @@
 # [Full Screen jQuery Content Slider](https://jacobxperez.github.io/full-screen-jquery-content-slider/)
 
-## Project Status
-
-Project stable and under active development.
-
 ## Getting Started
 
 Start by **[downloading](https://github.com/jacobxperez/full-screen-jquery-content-slider/archive/master.zip)** the [repository](https://github.com/jacobxperez/full-screen-jquery-content-slider) or by cloning the project:
