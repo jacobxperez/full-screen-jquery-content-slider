@@ -1,4 +1,4 @@
-//out: ../css/style.css, sourcemap: false, compress: false
+// out: style.css, sourcemap: false, compress: false
 
 /* Full Screen jQuery Content Slider <https://github.com/jacobxperez/full-screen-jquery-content-slider>
  * Copyright (C) 2020 Jacob Perez <jacobxperez@gmx.com>
@@ -7,58 +7,35 @@
 ------------------------------------------------------------------------------*/
 
 
-// Variables
+// Global Imports
 // ----------------------------------------------------------------------------/
-@import "less/variables/global.less";
-@import "less/variables/wrapper.less";
-@import "less/variables/grid-system.less";
-@import "less/variables/typography.less";
-@import "less/variables/iconography.less";
-@import "less/variables/code.less";
-@import "less/variables/pre.less";
-@import "less/variables/blockquote.less";
-@import "less/variables/table.less";
-@import "less/variables/form.less";
-@import "less/variables/button.less";
-@import "less/variables/navbar.less";
-@import "less/variables/menu.less";
-@import "less/variables/breakpoints.less";
 
+// Variables
+@import "less/core/imports/variables.less";
 
 // Mixins
-// ----------------------------------------------------------------------------/
-@import "less/core/mixins/font.less";
-@import "less/core/mixins/positioning.less";
-@import "less/core/mixins/box-sizing.less";
-@import "less/core/mixins/buttons.less";
-@import "less/core/mixins/width.less";
-@import "less/core/mixins/height.less";
-@import "less/core/mixins/paddings.less";
-@import "less/core/mixins/margins.less";
-@import "less/core/mixins/borders.less";
-@import "less/core/mixins/background.less";
-@import "less/core/mixins/shadows.less";
-@import "less/core/mixins/scale.less";
-@import "less/core/mixins/transform.less";
-@import "less/core/mixins/transition.less";
-@import "less/core/mixins/opacity.less";
-@import "less/core/mixins/selection.less";
-@import "less/core/mixins/clearfix.less";
-@import "less/core/mixins/grid-system.less";
+@import "less/core/imports/mixins.less";
 
 
-// CSS Reset
+// Reset
 // ----------------------------------------------------------------------------/
 
-// base
-@import "less/core/reset/base.less";
+// Base
+@import "less/core/components/reset/base.less";
 
 // Typography
-@import "less/core/reset/typography.less";
+@import "less/core/components/reset/typography.less";
 
+// List Items
+@import "less/core/components/reset/list.less";
 
-// Components
-// ----------------------------------------------------------------------------/
+// Blockquote
+@import "less/core/components/reset/blockquote.less";
+
+// Leading
+@import "less/core/components/reset/leading.less";
+
 
 // Slider
-@import "less/slider.less";
+// ----------------------------------------------------------------------------/
+@import "less/custom/slider.less";
