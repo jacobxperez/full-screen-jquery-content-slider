@@ -1,0 +1,78 @@
+// Background Colors
+// ----------------------------------------------------------------------------/
+.success {
+    background-color: @success;
+    color: @success-text;
+}
+
+.success-hover {
+    &.active,
+    &:hover,
+    &:active {
+        background-color: @success-hover;
+        color: @success-text;
+    }
+}
+
+.warning {
+    background-color: @warning;
+    color: @warning-text;
+}
+
+.warning-hover {
+    &.active,
+    &:hover,
+    &:active {
+        background-color: @warning-hover;
+        color: @warning-text;
+    }
+}
+
+.danger {
+    background-color: @danger;
+    color: @danger-text;
+}
+
+.danger-hover {
+    &.active,
+    &:hover,
+    &:active {
+        background-color: @danger-hover;
+        color: @danger-text;
+    }
+}
+
+
+// Text Colors
+// ----------------------------------------------------------------------------/
+.success-text {
+    color: @success;
+}
+
+.warning-text {
+    color: @warning;
+}
+
+.danger-text {
+    color: @danger;
+}
+
+
+// Disabled
+// ----------------------------------------------------------------------------/
+.disabled {
+    background-color: @disabled;
+    color: @disabled-text;
+    cursor: not-allowed;
+
+    &:hover,
+    &:active {
+        background-color: @disabled;
+        color: @disabled-text;
+        decoration: none;
+    }
+
+    &:focus {
+        outline: 0;
+    }
+}
