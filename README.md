@@ -4,7 +4,7 @@
 
 Start by **[downloading](https://github.com/jacobxperez/full-screen-jquery-content-slider/archive/master.zip)** the [repository](https://github.com/jacobxperez/full-screen-jquery-content-slider) or by cloning the project:
 
- git clone https://github.com/jacobxperez/full-screen-jquery-content-slider.git
+ git clone <https://github.com/jacobxperez/full-screen-jquery-content-slider.git>
 
 ## Contributing
 
